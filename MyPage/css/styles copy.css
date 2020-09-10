@@ -1,0 +1,282 @@
+/* 1, cssを初期化(スタイルの初期化、progateより) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/* ----------------------------------------------------- */
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/*------------- ラッパー間の間隔のスタイルコード -----------------*/
+
+.interval {
+  width: 400px;
+  height: 40px;
+  border-top: 2px dashed gray;
+  margin: 100px auto 0 auto;
+}
+
+/*------------- ラッパー間の間隔のスタイルコードEND -----------------*/
+
+
+
+/*------------- headerのスタイルコード -----------------*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  background-color: rgba(24, 24,24, 0.8);
+  z-index: 100;
+}
+header h1 {
+  padding-top: 2px;
+  float: left;
+}
+header img {
+  height: 60px;
+}
+header nav {
+  float: left;
+}
+header li {
+  float: left;
+  height: 64px;
+  line-height: 64px;
+  margin-left: 50px;
+}
+header li a {
+  display: flex;
+  position: relative;
+  color: rgb(200, 200, 200);
+  transition: .3s;
+}
+header li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .3s;
+}
+header li a:hover,
+.fab:hover {
+  color: #eee;
+}
+header li a:hover::after {
+  background: #eee;
+}
+
+header .icon {
+  float: right;
+}
+.icon {
+  margin-left: 28px;
+  margin-top: 11px;
+}
+.fab {
+  display: inline-block;
+  font-size: 40px;
+  color: rgb(200, 200, 200);
+  transition: .3s;
+}
+
+header .container::after {
+	display:block;
+	content:"";
+	clear: both;
+}
+/*------------- headerのスタイルコードEND -----------------*/
+
+
+
+/*------------- ヘディングのスタイルコード -----------------*/
+
+.headding {
+  width: 1070px;
+  margin: 150px auto 150px auto;
+}
+.headding h1 {
+  font-size: 70px;
+  float: left;
+}
+
+.headding img {
+  float: left;
+  max-width: 490px;
+  margin-left: 80px;
+}
+.headding::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*------------- ヘディングのスタイルコードEND -----------------*/
+
+
+
+/*------------- 自己紹介のスタイルコード -----------------*/
+
+main section h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+  line-height: 20px;
+}
+.subtitle {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.me {
+  width: 60%;
+  margin: 60px auto;
+  display: flex;
+  padding-left: 30px;
+}
+.me img {
+  float: left;
+  height: 140px;
+  margin-right: 50px;
+}
+.me p {
+  float: right;
+  line-height: 40px;
+  margin: auto auto;
+}
+.profile {
+  min-width: 650px;
+  max-width: 50%;
+  margin: 0 auto;
+  color: #000;
+  border: 2px solid #444;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 5px 5px rgba(100, 100, 100, 0.7);
+}
+.profile h3 {
+  width: 250px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.profile dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile dd {
+  width: 40%;
+  font-size: 17px;
+}
+.profile dt {
+  width: 30%;
+  font-size: 17px;
+}
+
+.profile .question,
+.profile .answer {
+  width: 50%;
+}
+
+.profile .answer {
+  text-align: left;
+}
+
+/*------------- 自己紹介のスタイルコードEND -----------------*/
+
+/*------------- サイト紹介のスタイルコード -----------------*/
+.site-wrapper {
+  margin-bottom: 400px;
+}
+.site-section {
+  width: 78%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.site {
+  margin-right: 3px;
+}
+.site a{
+  width: 240px;
+  padding: 5px 3px 10px 3px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  transition: .18s;
+  display: block;
+}
+.site a:hover {
+  background-color: rgba(140, 140, 140, 0.1);
+}
+.site img {
+  width: 240px;
+  height: 135px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.site .detail {
+  font-size: 12px;
+  color: #444;
+  height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.site h1 {
+  color: #000;
+}
+.tag {
+  font-size: 14px;
+  color: white;
+  display: inline;
+  padding: 2px 4px;
+  letter-spacing: .5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.date {
+  font-size: 12px;
+  color: #aaa;
+}
+.html {
+  background-color: yellowgreen;
+}
+.css {
+  background-color: skyblue;
+}
+.javascript {
+  background-color: orange;
+}
+
+
+/*------------- サイト紹介のスタイルコードEND -----------------*/
