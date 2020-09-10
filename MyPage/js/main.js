@@ -60,7 +60,7 @@
       siteContent.classList.add('site');
       siteSection.appendChild(siteContent);
       const a = document.createElement('a');
-      a.target = "_blank";
+//       a.target = "_blank";
       a.href = site.url;
       siteContent.appendChild(a);
 
