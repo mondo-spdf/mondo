@@ -1,3 +1,29 @@
+/* ページに戻るボタンのスタイルコード */
+
+.go-home {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: skyblue;
+  font-size: 18px;
+  border: 3px solid skyblue;
+  text-align: center;
+  line-height: 90px;
+  display: block;
+  transition: .3s;
+  z-index: 10;
+}
+.go-home:hover {
+  background: skyblue;
+  color: white;
+  border: 3px solid rgb(0, 183, 255);
+}
+
+
+/* --------------------------------------- */
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
