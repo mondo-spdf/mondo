@@ -4,7 +4,7 @@
   const sites =
   [
     {title: "東海オンエアクイズ！ | もんどのプログラミング", img: "photo/site1.png", date: "20/01/01", detail: "東海オンエアの動画の一部分の音だけを聞いて、それが一体なんの動画なのか、選択肢の中から当てるゲームです。", tag: ["html", "css", "javascript"], url: "https://mondo-spdf.github.io/mondo/MyTOKAIONAIR/"},
-    {title: "オススメゲーム紹介 | もんどのプログラミング", img: "photo/site2.png", date: "20/01/01", detail: "友達に一緒にやるPCゲームを紹介するために作ったサイトです。背景に動画を使っているサイトを作りたくてチャレンジしました。",  tag: ["html", "css", "javascript"], url: "https://mondo-spdf.github.io/mondo/MyIntroduceGame/"},
+    {title: "オススメゲーム紹介 | もんどのプログラミング", img: "photo/site2.png", date: "20/01/01", detail: "友達に一緒にやるPCゲームを紹介するために作ったサイトです。背景に動画を使っているサイトを作りたくてチャレンジしました。",  tag: ["html", "css"], url: "https://mondo-spdf.github.io/mondo/MyIntroduceGame/"},
     {title: "PCセットアップ紹介 | もんどのプログラミング", img: "photo/site3.png", date: "20/01/01", detail: "友達にPCのセットアップのために作ったサイトです。クリックすると金額の合計が出る仕組みを作りました。",  tag: ["html", "css", "javascript"], url: "https://mondo-spdf.github.io/mondo/PCSetup/"},
   ];
 
