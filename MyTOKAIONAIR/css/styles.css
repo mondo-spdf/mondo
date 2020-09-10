@@ -1,0 +1,180 @@
+body {
+  background: rgb(255, 245, 223);
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  user-select: none;
+}
+
+.container {
+  width: 600px;
+  margin: 8px auto;
+  background-color: rgb(230, 247, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 16px;
+  position: relative;
+}
+
+#question {
+  margin: 5px 0 16px 0;
+  font-size: 20px;
+}
+
+#choices {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+#choices > li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices > li:hover {
+  background-color: #e2e2e2;
+}
+
+#choices > li.correct {
+  background: #d4edda;
+  border-color: #afe0ba;
+  color: #155724;
+  font-weight: bold;
+}
+
+/* #choices > li.correct::after {
+  content:' ... 正解!'
+} */
+
+#choices > li.wrong {
+  background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+/* #choices > li.wrong::after {
+  content:' ... 残念!'
+} */
+
+#btn, #result > a {
+  background-color: #3498db;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 0 #2880b9;
+}
+
+#btn.finish {
+  background: rgb(117, 199, 20);
+  box-shadow: 0 4px 0 rgb(97, 179, 0);
+}
+
+header {
+  text-align: center;
+  color: rgb(238, 173, 31);
+  text-shadow: 2px 2px 0 #00f, -2px -2px 0 #00f,
+  -2px 2px 0 #00f, 2px -2px 0 #00f,
+  0px 2px 0 #00f,  0-2px 0 #00f,
+  -2px 0 0 #00f, 2px 0 0 #00f;
+}
+
+header h2 {
+  margin: 20px 0 0 0;
+  font-size: 40px;
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+  font-size: 50px;
+}
+
+audio {
+  display: block;
+  margin: 0 auto;
+}
+
+/* exlpain-wrapperのスタイル */
+#explain.disabled {
+  display: none;
+}
+
+#judgment {
+  font-size: 20px;
+  color: red;
+  border-top: 1px solid rgb(192, 192, 192);
+  padding: 10px 0;
+  margin: 0;
+}
+
+.answer {
+  margin: 0;
+  font-weight: bold;
+}
+
+#answer {
+  font-size: 16px;
+  color: #155724;
+}
+
+#btn.disabled {
+  background: #ccc;
+  box-shadow: 0 4px 0 #bbb;
+  opacity: 0.8;
+  cursor: default;
+}
+
+#result {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+#perfect {
+  text-align: center;
+}
+
+#result.hidden {
+  transform: translateY(-500px);
+}
+
+#result > p {
+  font-size: 24px;
+
+}
+
+#result > a {
+  display: block;
+  text-decoration: none;
+}
+
+@media(max-width: 670px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+  }
