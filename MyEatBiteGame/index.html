@@ -3,42 +3,12 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <script>
-    function f_dragstart(event){
-    //ドラッグするデータのid名をDataTransferオブジェクトにセット
-      event.dataTransfer.setData("text", event.target.id);
-      event.dataTransfer.dropEffect = "copy";
+    <title>色あてゲーム！ | もんどのプログラミング</title>
 
-    }
-  
-    /***** ドラッグ要素がドロップ要素に重なっている間の処理 *****/
-    function f_dragover(event){
-    //dragoverイベントをキャンセルして、ドロップ先の要素がドロップを受け付けるようにする
-      event.preventDefault();
-    }
-  
-    /***** ドロップ時の処理 *****/
-    function f_drop(event){
-    //ドラッグされたデータのid名をDataTransferオブジェクトから取得
-      let id_name = event.dataTransfer.getData("text");
-    //id名からドラッグされた要素を取得
-      let drag_elm = document.getElementById(id_name);
-    //ドロップ先にドラッグされた要素を追加
-      event.currentTarget.appendChild(drag_elm);
-    //エラー回避のため、ドロップ処理の最後にdropイベントをキャンセルしておく
-      event.preventDefault();
-    }
-    </script> -->
   </head>
     <body>
       <section id="section">
         <div class="container">
-          <!-- <div class="dropbox" id="dropbox1"></div>
-          <div class="dropbox" id="dropbox2"></div>
-          <div class="dropbox" id="dropbox3"></div>
-          <div class="dropbox" id="dropbox4"></div>
-          <div class="dropbox" id="dropbox5"></div>
-          <div class="dropbox" id="dropbox6"></div> -->
           <table border="4" id="table">
             <tr>
               <th></th>
@@ -79,18 +49,6 @@
           <div class="dropbox" id="answerBox"></div>
         </div>
         <div id="btn">set</div>
-
-        <!-- <div id="fruits">
-          <!-- <div class="marble" id="blue" style="background-color: blue"></div>
-          <div class="marble" id="red" style="background-color: red"></div>
-          <div class="marble" id="green" style="background-color: green"></div>
-          <div class="marble" id="yellow" style="background-color: yellow"></div>
-          <div class="marble" id="pink" style="background-color: pink"></div>
-          <div class="marble" id="gray" style="background-color: gray"></div> -->
-          <!-- <img src="images/111.png" id="apple" alt="りんご" draggable="true" ondragstart="f_dragstart(event)">
-            <img src="images/222.jpg" id="orange" alt="みかん" draggable="true" ondragstart="f_dragstart(event)">
-            <img src="images/333.png" id="grape" alt="ぶどう" draggable="true" ondragstart="f_dragstart(event)"> -->
-        <!-- </div> -->
       </section>
       <script src="js/main.js"></script>
     </body>

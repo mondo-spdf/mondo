@@ -153,9 +153,14 @@
 
   }
 
+
+// 問題をセットする部分---------------
+
   SetDropBox();
   SetMarbles();
   SetAnswer();
+
+  // ボタンを押した時に起きる部分------------
 
   btn.addEventListener('click', () => {
     CheckAnswer();
@@ -163,11 +168,11 @@
     SetMarbles();
   });
 
-  function ResetGame() {
-    for(let i = 0; i < 4; i++) {
-      container[0].removeChild(container[0].firstChild);
-    }
-  }
+  // function ResetGame() {
+  //   for(let i = 0; i < 4; i++) {
+  //     container[0].removeChild(container[0].firstChild);
+  //   }
+  // }
 
 
 
