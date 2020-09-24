@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <title>色あてゲーム！ | もんどのプログラミング</title>
 
@@ -51,5 +52,85 @@
         <div id="btn">set</div>
       </section>
       <script src="js/main.js"></script>
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/Sortable.min.js"></script>
+      <script>
+        $(function(){
+          Sortable.create(dropbox1, {
+            animation: 150,
+          });
+          // Sortable.create(dropbox2, {
+          //   animation: 150,
+          // });
+          // Sortable.create(dropbox3, {
+          //   animation: 150,
+          // });
+          // Sortable.create(dropbox4, {
+          //   animation: 150,
+          // });
+          // Sortable.create(dropbox5, {
+          //   animation: 150,
+          // });
+          // Sortable.create(dropbox6, {
+          //   animation: 150,
+          // });
+          // Sortable.create(fruits, {
+          //   animation: 150,
+          // });
+        });
+        </script>
+      <script>
+        $(function(){
+          Sortable.create(fruits, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+
+          Sortable.create(dropbox1, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+
+          Sortable.create(dropbox2, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+
+          Sortable.create(dropbox3, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+
+          Sortable.create(dropbox4, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+
+          Sortable.create(dropbox5, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+          
+          Sortable.create(dropbox6, {
+            group: {
+              name: "boxes",
+            },
+            animation: 150
+          });
+        });
+        </script>
+        
     </body>
 </html>
