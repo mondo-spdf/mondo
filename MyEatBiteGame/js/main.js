@@ -79,6 +79,7 @@
       answerMarbles.push(copyColors[num]);
       copyColors.splice(num, 1);
     }
+    console.log(answerMarbles);
   }
 
   let selectBoxNum = 0;
@@ -128,7 +129,10 @@
         answermarble.id = ansmble;
         answermarble.classList.add(`${ansmble}`);
         answerBox.appendChild(answermarble);
-
+        btn.addEventListener('click', () => {
+          btn.href = "";
+        });
+        
       });
     }
   }
