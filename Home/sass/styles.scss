@@ -66,13 +66,14 @@ nav {
       text-align: center;
       // transition: .5s;
       // display: none;
-      opacity: 0.6;
-      &:hover {
-        opacity: 1;
-      }
       .icon {
+        opacity: 0.6;
         font-size: 30px;
         color: white;
+        // transition: .5s;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
