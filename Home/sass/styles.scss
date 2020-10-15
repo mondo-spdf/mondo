@@ -1,0 +1,79 @@
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: 2s;
+  &:hover {
+    margin-left: 300px;
+  }
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからcssコード */
+body {
+  background-color: #101010;
+}
+
+.logo {
+  transition-timing-function: ease;
+  transition: 1s;
+  transition-delay: 1.5s;
+  width: 400px;
+  margin: 17% auto 50px auto;
+}
+
+.logo-start {
+  margin-top: 22%;
+}
+
+img {
+  // margin: 17% auto 50px auto;
+  width: 400px;
+  opacity: 0.8;
+  display: block;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+nav {
+  .icons {
+    display: block;
+    padding: 0;
+    margin-left: calc(50% - 240px);
+    &:after{
+      display: block;
+      content: "";
+      clear: both;
+    }
+    li {
+      float: left;
+      padding: 0 15px;
+      text-align: center;
+      // transition: .5s;
+      // display: none;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+      .icon {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
+}
