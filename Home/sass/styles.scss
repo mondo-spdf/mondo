@@ -1,7 +1,6 @@
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
-  width: 100%;
-  height: 100%;
+  margin: 0;
 }
 
 .box {
@@ -66,7 +65,7 @@ nav {
       text-align: center;
       // transition: .5s;
       // display: none;
-      .icon {
+      .icon{
         opacity: 0.6;
         font-size: 30px;
         color: white;
