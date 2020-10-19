@@ -23,6 +23,7 @@ a {
 }
 
 /* ここからcssコード */
+
 body {
   background-color: #101010;
 }
@@ -86,14 +87,8 @@ nav {
         opacity: 0;
         transition: 1s;
         li {
+          border-top: 1px solid gray;
           margin: 0;
-          .icon {
-            padding: 10px 0px;
-            border-top: 1px solid gray;
-            i {
-              padding-bottom: 10px;
-            }
-          }
         }
       }
     }
