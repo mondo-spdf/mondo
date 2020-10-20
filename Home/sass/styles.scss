@@ -1,3 +1,9 @@
+$bcolor: #101010;
+$bcolorIcon: rgb(184, 184, 184);
+$wcolor: rgb(199, 199, 199);
+$wcolorIcon: gray;
+
+
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
   margin: 0;
@@ -24,10 +30,6 @@ a {
 
 /* ここからcssコード */
 
-body {
-  background-color: #101010;
-}
-
 .logo {
   transition-timing-function: ease;
   transition: 1s;
@@ -42,11 +44,7 @@ body {
 
 img {
   width: 400px;
-  opacity: 0.8;
   display: block;
-  &:hover {
-    opacity: 1;
-  }
 }
 
 nav {
@@ -73,11 +71,11 @@ nav {
       }
       .icon {
         font-size: 30px;
-        color: rgb(184, 184, 184);
-        background-color: #101010;
-        &:hover {
-          color: white;
-        }
+        // color: $bcolorIcon;
+        // background-color: $bcolor;
+        // &:hover {
+        //   color: lighten($bcolorIcon, 50%);
+        // }
       }
       ul {
         display: none;
@@ -87,7 +85,7 @@ nav {
         opacity: 0;
         transition: 1s;
         li {
-          border-top: 1px solid gray;
+          // border-top: 1px solid $bcolorIcon;
           margin: 0;
         }
       }
@@ -124,6 +122,47 @@ table {
 
   &:focus {
     opacity: 1;
-    border: #101010;
+  }
+}
+
+body.black {
+  background-color: $bcolor;
+  .logo img{
+    color: $bcolor;
+    filter: invert(20%);
+    &:hover {
+      filter: invert(2%);
+    }
+  }
+  .icon {
+    color: $bcolorIcon;
+    background-color: $bcolor;
+    &:hover {
+      color: lighten($bcolorIcon, 50%);
+    }
+  }
+  ul li ul li{
+    border-top: 1px solid $bcolorIcon;
+  }
+}
+
+body.white {
+  background-color: $wcolor;
+  .logo img{
+    color: $wcolor;
+    filter: invert(60%);
+    &:hover {
+      filter: invert(2%);
+    }
+  }
+  .icon {
+    color: $wcolorIcon;
+    background-color: $wcolor;
+    &:hover {
+      color: lighten($wcolorIcon, 50%);
+    }
+  }
+  ul li ul li{
+    border-top: 1px solid $wcolorIcon;
   }
 }
