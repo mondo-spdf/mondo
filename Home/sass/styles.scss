@@ -71,11 +71,6 @@ nav {
       }
       .icon {
         font-size: 30px;
-        // color: $bcolorIcon;
-        // background-color: $bcolor;
-        // &:hover {
-        //   color: lighten($bcolorIcon, 50%);
-        // }
       }
       ul {
         display: none;
@@ -85,7 +80,6 @@ nav {
         opacity: 0;
         transition: 1s;
         li {
-          // border-top: 1px solid $bcolorIcon;
           margin: 0;
         }
       }
@@ -93,6 +87,7 @@ nav {
   }
 }
 
+// アイコンにhoverするとアイコンが下にフェードインしてくれるcssコード
 @keyframes tooltipShow {
   from {
     opacity: 0;
@@ -134,9 +129,10 @@ body.black {
       filter: invert(2%);
     }
   }
+
+  // 時間によってスタイルが変わるコード(Black style for 6PM to 6AM and White style for 6AM to 6PM)
   .icon {
     color: $bcolorIcon;
-    background-color: $bcolor;
     &:hover {
       color: lighten($bcolorIcon, 50%);
     }
@@ -157,7 +153,6 @@ body.white {
   }
   .icon {
     color: $wcolorIcon;
-    background-color: $wcolor;
     &:hover {
       color: lighten($wcolorIcon, 50%);
     }
